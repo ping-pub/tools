@@ -1,5 +1,5 @@
 {
-  "name": "ping-pub-tools",
+  "name": "ping-pub",
   "private": true,
   "workspaces": [
     "packages/*"
