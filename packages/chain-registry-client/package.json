@@ -1,6 +1,6 @@
 {
   "name": "@ping-pub/chain-registry-client",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "Cosmos Blockchain Registry Client",
   "keywords": [
     "Cosmos",
