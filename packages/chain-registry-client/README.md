@@ -1,11 +1,30 @@
 # `@ping-pub/chain-registry-client`
 
-> TODO: description
+> Chain Registry Client is a client which fetch Cosmos chain registry from https://registry.ping.pub.
 
 ## Usage
 
 ```
-import chainRegistryClient from '@ping-pub/chain-registry-client';
+import ChainRegistryClient from '@ping-pub/chain-registry-client';
 
-// TODO: DEMONSTRATE API
+const client = new ChainRegistryClient()
+
+client.fetchChainNames().then(x => {
+    expect(x.length).toBeGreaterThan(0);
+})
+
+client.fetchChainInfo('cosmoshub').then(x => {
+    expect(x.chain_name).toBe('cosmoshub');
+})
+
+client.fetchIBCPaths().then(x => {
+    expect(x.length).toBeGreaterThan(0);
+})
+
+client.fetchIBCPathInfo('cosmoshub-osmosis.json').then(x => {
+    expect(x.chain_1.chain_name).toBe('cosmoshub');
+    expect(x.chain_2.chain_name).toBe('osmosis');
+    done()
+})
+
 ```

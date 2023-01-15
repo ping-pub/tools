@@ -1,10 +1,6 @@
 import fetch from "cross-fetch"
 import {Chain, Entry, AssetList, IBCPath, IBCPathInfo} from './types'
 
-export function hello(text: string) {
-    return 'hello' + text
-}
-
 export default class ChainRegistryClient{
     endpoint: string
 
