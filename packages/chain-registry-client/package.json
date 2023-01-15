@@ -1,5 +1,5 @@
 {
-  "name": "@ping.pub/chain-registry-client",
+  "name": "chain-registry-client",
   "version": "0.0.8-alpha.0",
   "description": "Cosmos Blockchain Registry Client",
   "keywords": [
@@ -48,5 +48,5 @@
     "jest-junit": "^15.0.0",
     "ts-node": "10.9.1"
   },
-  "gitHead": "710fd555fdd101ba1b7a869ce220263f58fe7ec5"
+  "gitHead": "cf416c77da03b6758d57e80435ecbf1f26456767"
 }
