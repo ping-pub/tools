@@ -1,6 +1,6 @@
 {
   "name": "chain-registry-client",
-  "version": "0.0.13-alpha.0",
+  "version": "0.0.14-alpha.0",
   "description": "Cosmos Blockchain Registry Client",
   "keywords": [
     "Cosmos",
