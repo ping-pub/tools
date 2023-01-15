@@ -13,7 +13,7 @@
         "lib": [
             "es6"
         ],
-        "esModuleInterop": true,
+        "esModuleInterop": false,
         "outDir": "dist"
     },
     "exclude": [
