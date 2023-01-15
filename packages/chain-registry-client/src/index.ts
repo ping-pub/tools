@@ -1,7 +1,7 @@
 import fetch from "cross-fetch"
 import {Chain, Entry, AssetList, IBCPath, IBCPathInfo} from './types'
 
-export class ChainRegistryClient{
+export default class ChainRegistryClient{
     endpoint: string
 
     constructor(endpoint = 'https://registry.ping.pub') {
