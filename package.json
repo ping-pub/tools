@@ -16,7 +16,9 @@
   },
   "scripts": {
     "build": "lerna run build --stream",
+    "postpack": "ls -al",
     "lint": "lerna run lint --stream --parallel",
     "test": "yarn jest --coverage"
+    
   }
 }
