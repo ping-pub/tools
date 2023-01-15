@@ -1,10 +1,10 @@
 # `@ping-pub/chain-registry-client`
 
-> Chain Registry Client is a client which fetch Cosmos chain registry from https://registry.ping.pub.
+Chain Registry Client is a client which fetch Cosmos chain registry from https://registry.ping.pub.
 
 ## Usage
 
-```
+```typescript
 import ChainRegistryClient from '@ping-pub/chain-registry-client';
 
 const client = new ChainRegistryClient()
