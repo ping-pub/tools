@@ -2,7 +2,7 @@ import fetch from "cross-fetch"
 import {Chain, Entry, AssetList, IBCPath, IBCPathInfo} from './types'
 
 export default class ChainRegistryClient{
-    
+
     readonly endpoint: string
 
     constructor(endpoint = 'https://registry.ping.pub') {
@@ -26,7 +26,7 @@ export default class ChainRegistryClient{
         return this.get<AssetList>(`/${chainName}/assetlist.json`)
     }
     async fetchIBCPaths() {
-        const entries = await this.get<Entry[]>('/_IBC')
+        const entries = await this.get<Entry[]>('/_IBC/')
         const re = /([\w]+)-([\w]+)\.json/;
         return entries.map(x => {
             const matches = x.name.match(re)
